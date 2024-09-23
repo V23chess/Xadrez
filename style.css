@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* altera a imagem */
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #ffffff;
+
+    
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    background-color: #00000071;
+}
+h1 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    background-color: #00000071;
+}
+/* muda a fonte, a cor do background e o tamanho da linha */
+
+nav{
+    position: fixed; 
+    top: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.644);
+    padding: 20px 0;
+}
+/* deixa a posição dos links fixados no topo e deixa a largura em 100% mudando a cor do background e alterando o tamanho do padding para criar uma "caixa" */
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+/* ajeita o tamanho da caixa onde está os links e centraliza os links */
+nav ul li{
+    margin: 0 20px;
+}
+/* Separa os links criando um espaço entre eles de 20px  */
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+/* Muda a cor dos links, remove as linhas do texto, altera o tamanho das letras, cria caixas de 10px, e cria uma transição de cor de 0.3s */
+nav ul li a:hover{
+    color: #ffee00;
+}
+/* quando o cursor do mouse passa por cima do link a cor de branco vai para laranja */
+section:not(#home){
+    padding: 100px 20px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+/* deixa um espaço da imagem pro texto, centraliza o texto, deixa o display flexionado, deixa o conteudo centralizado, os items centralizados e aumenta o tamanho par a100vh */
+#home{
+    /* background-color: #4a90e2; */
+    background-image: url(https://www.napratica.org.br/wp-content/uploads/2016/06/maurice-ashley-xadrez.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+
+
+/* ele permite agora visualizar a sessão "Experiência de usuario" e centraliza o button "saiba mais" logo abaixo do texto(p) */
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/* deixa as imagens ao lado do texto(p), centraliza o texto(p) ao lado da imagem, e deixa o conteúdo centralizado */
+.contente img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+/* muda a largura e o tamanho da imagem enquanto cria uma distância da borda do site, a imagem de 20px e deixa com uma borda de 8px. */
+.content .text{
+    max-width: 600px;
+    text-align: left;
+}
+/* deixa um espaço(largura) entre o inicio do site e a imagem de 600px centralizando-a no site enquanto deixa o texto colado a imagem sem diferença de largura em cada linha */
+.content .text h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* aumenta o tamanho do h2, cria um espaço do h2 para o p de 20px na vertical e deixa a cor do h2 mais.. cinza? */
+.content .p{
+    font-size: 1.1em;
+    color: #ffffff;
+}
+/* Deixa o tamanho da fonte um pouco maior e muda a cor */
+img{
+    border-radius: 50px;
+}
+#objetivo{
+    background-color: #000000;
+}
+/* muda a cor do background para branco */
+#about{
+    background-color: #000000;
+}
+/* muda a cor do background para.. bege? ficou muito bom! */
+#contact{
+    background-color: #000000;
+}
+/* e muda denovo o background para outra cor */
+.cta-button{
+    margin-top: 30px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition:background-color 1s ease, transform 1s ease;
+}
+/* cria um espaço de 30px entre o bottom e o p, muda a cor, e cria uma caixa de 15px(height) e 30px(width), aumenta o tamanho da fonte para 18px, remove a borda, cria uma borda de 15px no bottom, cria uma pequena sombra para a ciaxa e faz uma transição de cor para branco a verde*/
+.cta-button:hover{
+    box-shadow: 0px 1px 3px rgb(29, 26, 26);
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
